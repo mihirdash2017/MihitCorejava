@@ -106,4 +106,219 @@ exit formalities send email
 ............................
 Mailer.exit@gspdc.accenture.com
 
+
+....................................................................
+https://www.java2novice.com/java-interview-programs/ :codility
+
+From: Dash, Mihir 
+Sent: Tuesday, April 30, 2019 6:38 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+
+
+       public static void main(String[] args) {
+              int count = 0;
+              String str = "aa ba basb ajudba";
+              Map<Character, Integer> map = new HashMap<Character, Integer>();
+              for (int i = 0; i < str.length(); i++) {
+                     char ch = str.charAt(i);
+                     if (map.containsKey(ch)) {
+                           map.put(ch, map.get(ch) + 1);
+                     } else {
+                           if(ch!=' ')
+                           map.put(ch, 1);
+                     }
+              }
+System.out.println(map);
+       }
+
+From: Dash, Mihir 
+Sent: Friday, April 19, 2019 5:28 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+
+https://medium.com/tech-tajawal/microservice-authentication-and-authorization-solutions-e0e5e74b248a :microservice
+
+From: Dash, Mihir 
+Sent: Thursday, April 18, 2019 10:06 AM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+
+https://www.concretepage.com/java/java-8/  :good concept in java 8
+
+From: Dash, Mihir 
+Sent: Monday, April 15, 2019 9:20 AM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+
+https://www.codenuclear.com/java-collections-interview-questions-answers/ --bhalo question guda achi
+
+From: Dash, Mihir 
+Sent: Friday, April 12, 2019 6:02 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+
+https://www.codenuclear.com/how-arraylist-works-internally-java/ internal java
+
+From: Dash, Mihir 
+Sent: Tuesday, April 9, 2019 10:11 AM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+
+https://javahungry.blogspot.com/2017/12/java-collections-framework-tutorial.html :for colection
+
+From: Dash, Mihir 
+Sent: Friday, April 5, 2019 6:21 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+
+https://www.wideskills.com/hibernate/transactions-and-concurrency-in-hibernate :hibernate
+
+From: Dash, Mihir 
+Sent: Friday, April 5, 2019 6:01 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+
+http://tutorials.jenkov.com/ for java
+
+From: Dash, Mihir 
+Sent: Thursday, April 4, 2019 6:47 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+
+http://ahmed-badawy.com/blog/wp-content/uploads/2018/10/Cracking-the-Coding-Interview-6th-Edition-189-Programming-Questions-and-Solutions.pdf
+
+From: Dash, Mihir 
+Sent: Thursday, April 4, 2019 6:20 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+
+https://www.artima.com/insidejvm/ed2/index.html --java architechture
+
+From: Dash, Mihir 
+Sent: Monday, April 1, 2019 7:07 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+
+https://www.wideskills.com/hibernate/hibernate-cascade-and-fetching-strategy : hibernate
+
+From: Dash, Mihir 
+Sent: Monday, April 1, 2019 3:50 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+
+https://howtoprogramwithjava.com/category/hibernate-2/ --realationship
+
+From: Dash, Mihir 
+Sent: Friday, March 15, 2019 11:57 AM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+
+https://javabeginnerstutorial.com/spring-boot/spring-boot-2-microservices-with-netflix-zuul-api-gateway/
+
+From: Dash, Mihir 
+Sent: Friday, February 22, 2019 10:39 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: Re: interview
+
+
+
+________________________________________
+From: Dash, Mihir
+Sent: Friday, February 22, 2019 9:51 AM
+To: Dash, Mihir
+Subject: RE: interview 
+ 
+https://github.com/eugenp/tutorials/tree/master/core-java-concurrency-advanced :thread
+ 
+tutorials/core-java-concurrency-advanced at master · eugenp/tutorials · GitHub
+github.com
+The "REST With Spring" Course: . Contribute to eugenp/tutorials development by creating an account on GitHub.
+
+ 
+From: Dash, Mihir 
+Sent: Monday, February 4, 2019 4:43 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+ 
+tps://www.javainuse.com/spring/sprboot
+ 
+From: Dash, Mihir 
+Sent: Monday, January 7, 2019 1:01 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+ 
+ 
+ 
+From: Dash, Mihir 
+Sent: Monday, January 7, 2019 12:32 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: FW: interview
+https://www.dineshonjava.com/method-injection-with-spring-using-lookup-method-property/
+https://www.baeldung.com/spring-lookup read it
+ 
+From: Dash, Mihir 
+Sent: Thursday, January 3, 2019 6:44 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+ 
+Spring core :https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#beans-compound-property-names
+ 
+From: Dash, Mihir 
+Sent: Wednesday, January 2, 2019 5:25 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+ 
+@SessionAttributes:
+ 
+https://www.logicbig.com/tutorials/spring-framework/spring-web-mvc/spring-model-attribute-with-session.html
+https://stackoverflow.com/questions/18791645/how-to-use-session-attributes-in-spring-mvc
+ 
+ 
+From: Dash, Mihir 
+Sent: Wednesday, January 2, 2019 3:47 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: FW: interview
+ 
+@SessionAttributes
+ 
+From: Dash, Mihir 
+Sent: Friday, December 28, 2018 6:45 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+ 
+https://medium.com/dev-bits/a-guide-for-adding-jwt-token-based-authentication-to-your-single-page-nodejs-applications-c403f7cf04f4
+how to integrate JWT in microservices ?
+ 
+From: Dash, Mihir 
+Sent: Thursday, December 27, 2018 5:22 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+ 
+https://www.geeksforgeeks.org/programs-printing-pyramid-patterns-java/ :start printting
+ 
+From: Dash, Mihir 
+Sent: Thursday, December 27, 2018 4:07 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+ 
+For program :
+https://codescracker.com/java/program/java-program-print-star-pyramid-patterns.htm
+ 
+From: Dash, Mihir 
+Sent: Wednesday, December 26, 2018 6:03 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: RE: interview
+ 
+Spring mvc: https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc
+ 
+From: Dash, Mihir 
+Sent: Wednesday, December 26, 2018 5:27 PM
+To: Dash, Mihir <mihir.dash@accenture.com>
+Subject: interview
+ 
+Rest : https://restfulapi.net/caching/
+
+....................................................................
+
  
