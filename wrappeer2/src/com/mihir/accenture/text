@@ -1,0 +1,109 @@
+setting.xml : https://confluence.ipttools.info/pages/viewpage.action?spaceKey=IECCW&title=Developer+Guidelines
+
+In terms of next steps to get the offshore team set up for starting development: 
+-	These are the developer setup confluence links which I’ve already shared during our transition sessions but just re-sending them 
+o	https://confluence.ipttools.info/display/IECCW/Developer+Guidelines
+o	https://confluence.ipttools.info/display/IECCW/Code+Branching+Model
+o	https://confluence.ipttools.info/display/IECCW/Transition+Documentation
+-	Start getting familiar with the code in fulfilment vertical ( this was covered with the walkthrough with Victor) for Generate Bundle and Record Submit screens ( currently been worked on by onshore devs). Below are the bitbucket repos you would need to go through in order to start development for ‘Manage Response’. The expectation is developers go through these along with some hands on tasks as the new journey for manage response will involve implementing same kind of framework.
+o	https://bitbucket.ipttools.info/projects/FU/repos/ipt-ms-fulfillment/browse  - ie-ccw branch
+o	https://bitbucket.ipttools.info/projects/FU/repos/ipt-ms-fulfillment-webui/browse - ie-ccw branch
+All the build jobs in jenkins are hooked to ie-ccw branch of various projects. See below link for information on Jenkins instances for build and deploy jobs https://confluence.ipttools.info/display/IECCW/Component+Mapping%3A+Build+and+Deployment+Jenkins+servers
+-	UI Overview session – this is setup for Wednesday – 8th Aug
+-	Manage response functional journey overview session – this will be set up for Thursday – 9th Aug.
+-	Jira setup / user stories overview – this will be setup for Thursday – 9th Aug as well .
+-	Once you have access to the dev environment – this is the link - https://atlas-dev-i-ie-ccw.service.np.iptho.co.uk/Caseworking/ipt-ss-activity-management-webui/activity-list
+..............................................
+Git command :
+..................
+git clone cloned)URL
+git init
+git status
+git branch
+       develop
+        ie-ccw
+git checkout -f ie-ccw 
+
+git pull
+Create the branch on your local machine and switch in this branch :
+$ git checkout -b [name_of_your_new_branch]
+after creating branch :
+git push origin -u ie-rrr-v2-IECC-duplicate-1238
+
+
+Logs :
+.......
+kubectl get pods -n dev-i-ie-ccw
+kubectl get pods -n ho-it-dev1-i-ie-enf
+kubectl get pods -n dev-i-ie-ccw | grep fulfill
+kubectl logs ipt-regist-svc-kd-67599f5689-7k2vm -n dev-i-ie-ccw > log11.txt
+kubectl logs ipt-fulfil-svc-kd-5887977595-ph5ps -n dev-i-ie-ccw > log12.txt
+kubectl logs ipt-regist-wui-kd-74b479b8f7-rqz99  -n dev-i-ie-ccw > log13.txt
+kubectl logs ipt-fulfil-wui-kd-5997b55b4-whql5 -n dev-i-ie-ccw > log14.txt
+cache clear:
+.................
+kubectl exec ipt-prodcat-svc-kd-7597b6bd55-2h5hj -n sit-i-ie-ccw -- curl -k -X delete https://localhost/ipt-ss-product-catalogue-services/cache;
+kubectl exec ipt-prodcat-svc-kd-7597b6bd55-7sdhz -n sit-i-ie-ccw -- curl -k -X delete https://localhost/ipt-ss-product-catalogue-services/cache; 
+
+
+
+log command:
+..........
+got o git bash command prompt and try the command.
+kubectl get pods -n dev-i-ie-ccw
+kubectl get pods -n dev-i-ie-ccw | grep fulfil
+
+kubectl logs 
+
+
+
+------------------------------
+
+
+
+ 
+
+
+................................................................................................
+
+
+for sit :Event hostory json
+............
+kubectl get pods -n sit-i-ie-ccw | grep event
+kubectl exec -it ipt-eventhis-pst-kd-85544bc696-s8cmc -n sit-i-ie-ccw sh
+curl -k https://localhost/eventhistory-persistence-services/v3/event/handle/SERVICE_DELIVERY/id/10445181
+
+sonar set up :
+-----------------------
+Step1 : download the sonarQube version 5.6.7 from given URL https://www.sonarqube.org/downloads/
+Step2 :unzip the downloaded zip file.
+Step3 :go to this path sonarqube-5.6.7\bin\windows-x86-64
+Step4:click on StartSonar
+Step5:once the sonarqube server has started please hit the URL http://localhost:9000
+Step6:for login use username=admin password=admin
+Step7:once we can see the sonat dashboards please import the rules which is provided by Koushal
+Step7: to run sonar by help of Maven.the command is  mvn sonar:sonar
+
+run it as admin mode
+https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Maven
+from this above url we are taking information which we need to add into setting.xml file
+need to add the morros :
+ <mirror>
+            <id>Iptho</id>
+            <name>Iptho</name>
+            <url>https://artefactrepository.service.ops.iptho.co.uk/repository/public</url>
+            <mirrorOf>central</mirrorOf>
+        </mirror>
+  </mirrors>
+
+thread URL
+...........
+https://www.decodejava.com/synchronization-in-java.htm
+https://www.vogella.com/tutorials/JavaConcurrency/article.html
+https://codesjava.com/static-synchronization-in-java
+
+exit formalities send email
+............................
+Mailer.exit@gspdc.accenture.com
+
+ 
